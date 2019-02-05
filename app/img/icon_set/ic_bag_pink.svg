@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 86 84"
+   version="1.1"
+   id="svg3209"
+   sodipodi:docname="ic_bag_pink.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata3215">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>All glyphs</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3213" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview3211"
+     showgrid="false"
+     inkscape:zoom="2.8095238"
+     inkscape:cx="-15.728814"
+     inkscape:cy="42"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3209" />
+  <title
+     id="title3203">All glyphs</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="All_glyphs"
+       data-name="All glyphs">
+      <path
+         d="M83.61,10.34c-1.48-1.28-9.53-7.38-11-8.68A8.85,8.85,0,0,0,67.06,0H18.94a8.85,8.85,0,0,0-5.51,1.66c-1.51,1.3-9.56,7.4-11,8.68A6.36,6.36,0,0,0,.07,16.29C.47,19,9.76,81.15,9.76,81.15a4.45,4.45,0,0,0,4,2.85H72.28a4.45,4.45,0,0,0,4-2.85S85.53,19,85.93,16.29A6.36,6.36,0,0,0,83.61,10.34ZM43,53.84c-16.24,0-19.72-23-20.44-27.72h9.19C33.13,33,36.27,44.84,43,44.84S52.87,33,54.25,26.12h9.19C62.72,30.86,59.24,53.84,43,53.84ZM7.82,17l11-11.5H67.16l11,11.5Z"
+         id="path3205"
+         style="fill:#dd179c;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

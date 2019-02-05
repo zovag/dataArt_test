@@ -1,0 +1,373 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot') format('embedded-opentype'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot') format('embedded-opentype'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.eot') format('embedded-opentype'), url('../fonts/OpenSans.ttf') format('truetype'), url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-Semibold.eot') format('embedded-opentype'), url('../fonts/OpenSans-Semibold.ttf') format('truetype'), url('../fonts/OpenSans-Semibold.woff') format('woff'), url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*----Colors Variable----*/
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  position: fixed;
+  background: #242424;
+  padding: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+body .container-header {
+  position: fixed;
+  width: 70px;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  top: 70px;
+  left: 0;
+  border-right: 1px solid #e7e7e7;
+}
+body .container-header .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #198ada;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: none;
+}
+body .container-header .btn-close:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -20px;
+  right: -20px;
+  width: 90px;
+  height: 80px;
+}
+body .container-header .btn-close .icon-item {
+  display: block;
+  width: 23px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 13px;
+  right: 9px;
+}
+body .container-header .btn-close .icon-item:nth-child(2) {
+  top: 19px;
+}
+body .container-header .btn-close .icon-item:nth-child(3) {
+  top: 25px;
+}
+body .container-header a {
+  color: #fff;
+}
+body .container-header .item .menu-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  line-height: 80px;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .container-header .item .menu-item .icon {
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .container-header .item .menu-item .icon.icon-palette {
+  width: 25px;
+  height: 70px;
+  fill: #14b9d6;
+}
+body .container-header .item .menu-item .icon.icon-music {
+  width: 15px;
+  height: 70px;
+  fill: #e76049;
+}
+body .container-header .item .menu-item .icon.icon-camera {
+  width: 25px;
+  height: 70px;
+  fill: #2eb398;
+}
+body .container-header .item .menu-item .icon.icon-cinema {
+  width: 25px;
+  height: 70px;
+  fill: #90899c;
+}
+body .container-header .item .menu-item .icon.icon-business {
+  width: 25px;
+  height: 70px;
+  fill: #5692b1;
+}
+body .container-header .item .menu-item .icon.icon-travel {
+  width: 25px;
+  height: 70px;
+  fill: #f9b704;
+}
+body .container-header .item .menu-item .icon.icon-fashion {
+  width: 25px;
+  height: 70px;
+  fill: #dd1787;
+}
+body .container-header .item .menu-item .icon.icon-plus {
+  width: 25px;
+  height: 70px;
+  fill: #e76049;
+}
+body .container-header .item .menu-item .menu-text {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 70px;
+  width: 150px;
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+  color: transparent;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .container-header .item .menu-item:hover.gallery,
+body .container-header .item .menu-item:focus.gallery {
+  background: #14b9d6;
+}
+body .container-header .item .menu-item:hover.gallery .menu-text,
+body .container-header .item .menu-item:focus.gallery .menu-text {
+  background: #14b9d6;
+}
+body .container-header .item .menu-item:hover.music,
+body .container-header .item .menu-item:focus.music {
+  background: #e76049;
+}
+body .container-header .item .menu-item:hover.music .menu-text,
+body .container-header .item .menu-item:focus.music .menu-text {
+  background: #e76049;
+}
+body .container-header .item .menu-item:hover.photo,
+body .container-header .item .menu-item:focus.photo {
+  background: #2eb398;
+}
+body .container-header .item .menu-item:hover.photo .menu-text,
+body .container-header .item .menu-item:focus.photo .menu-text {
+  background: #2eb398;
+}
+body .container-header .item .menu-item:hover.video,
+body .container-header .item .menu-item:focus.video {
+  background: #90899c;
+}
+body .container-header .item .menu-item:hover.video .menu-text,
+body .container-header .item .menu-item:focus.video .menu-text {
+  background: #90899c;
+}
+body .container-header .item .menu-item:hover.business,
+body .container-header .item .menu-item:focus.business {
+  background: #5692b1;
+}
+body .container-header .item .menu-item:hover.business .menu-text,
+body .container-header .item .menu-item:focus.business .menu-text {
+  background: #5692b1;
+}
+body .container-header .item .menu-item:hover.travel,
+body .container-header .item .menu-item:focus.travel {
+  background: #f9b704;
+}
+body .container-header .item .menu-item:hover.travel .menu-text,
+body .container-header .item .menu-item:focus.travel .menu-text {
+  background: #f9b704;
+}
+body .container-header .item .menu-item:hover.fashion,
+body .container-header .item .menu-item:focus.fashion {
+  background: #dd1787;
+}
+body .container-header .item .menu-item:hover.fashion .menu-text,
+body .container-header .item .menu-item:focus.fashion .menu-text {
+  background: #dd1787;
+}
+body .container-header .item .menu-item:hover.plus,
+body .container-header .item .menu-item:focus.plus {
+  background: #e76049;
+}
+body .container-header .item .menu-item:hover.plus .menu-text,
+body .container-header .item .menu-item:focus.plus .menu-text {
+  background: #e76049;
+}
+body .container-header .item .menu-item:hover .icon,
+body .container-header .item .menu-item:focus .icon {
+  fill: #fff;
+}
+body .container-header .item .menu-item:hover .menu-text,
+body .container-header .item .menu-item:focus .menu-text {
+  color: #fff;
+  left: 70px;
+}
+body .container-header .item.active .menu-item.gallery {
+  background: #14b9d6;
+}
+body .container-header .item.active .menu-item.gallery .menu-text {
+  background: #14b9d6;
+}
+body .container-header .item.active .menu-item.music {
+  background: #e76049;
+}
+body .container-header .item.active .menu-item.music .menu-text {
+  background: #e76049;
+}
+body .container-header .item.active .menu-item.photo {
+  background: #2eb398;
+}
+body .container-header .item.active .menu-item.photo .menu-text {
+  background: #2eb398;
+}
+body .container-header .item.active .menu-item.video {
+  background: #90899c;
+}
+body .container-header .item.active .menu-item.video .menu-text {
+  background: #90899c;
+}
+body .container-header .item.active .menu-item.business {
+  background: #5692b1;
+}
+body .container-header .item.active .menu-item.business .menu-text {
+  background: #5692b1;
+}
+body .container-header .item.active .menu-item.travel {
+  background: #f9b704;
+}
+body .container-header .item.active .menu-item.travel .menu-text {
+  background: #f9b704;
+}
+body .container-header .item.active .menu-item.fashion {
+  background: #dd1787;
+}
+body .container-header .item.active .menu-item.fashion .menu-text {
+  background: #dd1787;
+}
+body .container-header .item.active .menu-item.plus {
+  background: #e76049;
+}
+body .container-header .item.active .menu-item.plus .menu-text {
+  background: #e76049;
+}
+body .container-header .item.active .menu-item .icon {
+  fill: #fff;
+}
+body .grid-container {
+  width: -webkit-calc(100% - 115px);
+  width: calc(100% - 115px);
+  margin-left: 115px;
+  margin-top: 115px;
+}
+@media (max-width: 1024px) {
+  body .grid-container {
+    width: -webkit-calc(100% - 100px);
+    width: calc(100% - 100px);
+    margin-left: 100px;
+  }
+}
+@media (max-width: 599px) {
+  body .grid-container {
+    width: -webkit-calc(100% - 90px);
+    width: calc(100% - 90px);
+    margin-left: 90px;
+  }
+}
+body .grid-container .grid-item {
+  width: 30%;
+  margin-bottom: 35px;
+  border: 1px solid #ddd;
+  border-bottom: 5px solid #2eb398;
+}
+@media (max-width: 1024px) {
+  body .grid-container .grid-item {
+    width: 45%;
+  }
+}
+@media (max-width: 599px) {
+  body .grid-container .grid-item {
+    width: 95%;
+  }
+}
+body .grid-container .grid-item:nth-child(2) {
+  border-bottom: 5px solid #e76049;
+}
+body .grid-container .grid-item:nth-child(3) {
+  border-bottom: 5px solid #5692b1;
+}
+body .grid-container .grid-item:nth-child(4) {
+  border-bottom: 5px solid #90899c;
+}
+body .grid-container .grid-item img {
+  width: 100%;
+}
+body .grid-container .grid-item .content-wrap {
+  padding: 30px 27px;
+  position: relative;
+  background: #fff;
+}
+body .grid-container .grid-item .content-wrap:after {
+  bottom: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 22px;
+  margin-left: -22px;
+}
+body .grid-container .grid-item .content-wrap .icon-calendar {
+  width: 15px;
+  height: 15px;
+  fill: #9d9d9d;
+  margin-right: 7px;
+  margin-top: 2px;
+}
+body .grid-container .grid-item .content-wrap .article-date {
+  font-family: 'OpenSans-Semibold';
+  font-size: 14px;
+  color: #9d9d9d;
+  vertical-align: top;
+}
+body .grid-container .grid-item .content-wrap .article-title {
+  font-family: 'Montserrat-Bold';
+  font-size: 26px;
+}
+body .grid-container .grid-item .content-wrap p {
+  font-family: 'OpenSans';
+  font-size: 14px;
+}

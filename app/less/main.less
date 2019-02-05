@@ -1,0 +1,384 @@
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.eot') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.ttf')  format('truetype'), 
+        url('../fonts/Montserrat-Bold.woff')  format('woff'), 
+        url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.ttf')  format('truetype'), 
+        url('../fonts/Montserrat-Regular.woff')  format('woff'), 
+        url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+        url('../fonts/OpenSans.ttf')  format('truetype'), 
+        url('../fonts/OpenSans.woff')  format('woff'),
+        url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.eot') format('embedded-opentype'),
+        url('../fonts/OpenSans-Semibold.ttf')  format('truetype'), 
+        url('../fonts/OpenSans-Semibold.woff')  format('woff'),
+        url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----Colors Variable----*/ 
+@red-lt:   #e76049;
+@pink:     #dd1787;
+@yellow:   #f9b704;
+@green:    #2eb398;
+@grey-vl:  #90899c;
+@grey-lt:  #9d9d9d;
+@blue-lt:  #14b9d6;
+@blue-dk:  #5692b1;
+
+
+body {
+    background: #fff;   
+    margin: 0;
+    padding: 0;
+    header {
+        position: fixed;
+        background: #242424;
+        padding: 25px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    .container-header {
+        position: fixed;
+        width: 70px;
+        height: 100%;
+        background: #fff;
+        z-index: 2;
+        top: 70px;
+        left: 0;
+        border-right:1px solid #e7e7e7;
+        .btn-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #198ada;
+            border-radius: 50%;
+            display: none;
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: -20px;
+                right: -20px;
+                width: 90px;
+                height: 80px;
+            }
+            .icon-item {
+                display: block;
+                width: 23px;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                top: 13px;
+                right: 9px;
+                &:nth-child(2) {
+                    top: 19px;
+                }
+                &:nth-child(3) {
+                    top: 25px;
+                }
+            }
+        }
+        a {
+            color: #fff;
+        }
+        .item {
+            .menu-item {
+                cursor: pointer;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 70px;
+                text-align: center;
+                line-height: 80px;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                .icon {                
+                    -moz-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    &.icon-palette {
+                        width: 25px;
+                        height: 70px;
+                        fill: @blue-lt; 
+                    }
+                    &.icon-music {
+                        width: 15px;
+                        height: 70px;
+                        fill: @red-lt; 
+                    }
+                    &.icon-camera {
+                        width: 25px;
+                        height: 70px;
+                        fill: @green; 
+                    }
+                    &.icon-cinema {
+                        width: 25px;
+                        height: 70px;
+                        fill: @grey-vl; 
+                    }
+                    &.icon-business {
+                        width: 25px;
+                        height: 70px;
+                        fill: @blue-dk; 
+                    }
+                    &.icon-travel {
+                        width: 25px;
+                        height: 70px;
+                        fill: @yellow; 
+                    }
+                    &.icon-fashion {
+                        width: 25px;
+                        height: 70px;
+                        fill: @pink; 
+                    }
+                    &.icon-plus {
+                        width: 25px;
+                        height: 70px;
+                        fill: @red-lt; 
+                    }
+                }
+                .menu-text {
+                    position: absolute;
+                    top: 0;
+                    left: -150px;
+                    height: 70px;
+                    width: 150px;
+                    font-family: 'Montserrat-Bold';
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 70px;
+                    color: transparent;
+                    -moz-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+                &:hover,
+                &:focus {
+                    &.gallery {
+                        background: @blue-lt;
+                        .menu-text {
+                            background: @blue-lt;
+                        }
+                    }
+                    &.music {
+                        background: @red-lt;
+                        .menu-text {
+                            background: @red-lt;
+                        }
+                    }
+                    &.photo {
+                        background: @green;
+                        .menu-text {
+                            background: @green;
+                        }
+                    }
+                    &.video {
+                        background: @grey-vl;
+                        .menu-text {
+                            background: @grey-vl;
+                        }
+                    }
+                    &.business {
+                        background: @blue-dk;
+                        .menu-text {
+                            background: @blue-dk;
+                        }
+                    }
+                    &.travel {
+                        background: @yellow;
+                        .menu-text {
+                            background: @yellow;
+                        }
+                    }
+                    &.fashion {
+                        background: @pink;
+                        .menu-text {
+                            background: @pink;
+                        }
+                    }
+                    &.plus {
+                        background: @red-lt;
+                        .menu-text {
+                            background: @red-lt;
+                        }
+                    }
+                    .icon {
+                        fill: #fff;
+                    }
+                    .menu-text {
+                        color: #fff;
+                        left: 70px;
+                    }
+                }
+                
+            }
+            &.active {
+                .menu-item {
+                    &.gallery {
+                        background: @blue-lt;
+                        .menu-text {
+                            background: @blue-lt;
+                        }
+                    }
+                    &.music {
+                        background: @red-lt;
+                        .menu-text {
+                            background: @red-lt;
+                        }
+                    }
+                    &.photo {
+                        background: @green;
+                        .menu-text {
+                            background: @green;
+                        }
+                    }
+                    &.video {
+                        background: @grey-vl;
+                        .menu-text {
+                            background: @grey-vl;
+                        }
+                    }
+                    &.business {
+                        background: @blue-dk;
+                        .menu-text {
+                            background: @blue-dk;
+                        }
+                    }
+                    &.travel {
+                        background: @yellow;
+                        .menu-text {
+                            background: @yellow;
+                        }
+                    }
+                    &.fashion {
+                        background: @pink;
+                        .menu-text {
+                            background: @pink;
+                        }
+                    }
+                    &.plus {
+                        background: @red-lt;
+                        .menu-text {
+                            background: @red-lt;
+                        }
+                    }
+                    .icon {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+        
+    }
+    .grid-container {
+        width: ~ 'calc(100% - 115px)';
+        margin-left: 115px;
+        margin-top: 115px; 
+        @media (max-width: 1024px) { 
+            width: ~ 'calc(100% - 100px)';
+            margin-left: 100px;
+        }
+        @media (max-width: 599px) { 
+            width: ~ 'calc(100% - 90px)';
+            margin-left: 90px;
+        }
+        .grid-item { 
+            width: 30%; 
+            margin-bottom: 35px;
+            border: 1px solid #ddd;
+            border-bottom: 5px solid @green;
+            @media (max-width: 1024px) { 
+                width: 45%;
+            }
+            @media (max-width: 599px) { 
+                width: 95%;
+            }
+            &:nth-child(2) {
+                border-bottom: 5px solid @red-lt;
+            }
+            &:nth-child(3) {
+                border-bottom: 5px solid @blue-dk;
+            }
+            &:nth-child(4) {
+                border-bottom: 5px solid @grey-vl;
+            }
+            img {
+                width: 100%;
+            }
+            .content-wrap {
+                padding: 30px 27px;
+                position: relative;
+                background: #fff;
+                &:after {
+                    bottom: 100%;
+                    left: 20%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-color: rgba(255, 255, 255, 0);
+                    border-bottom-color: #fff;
+                    border-width: 22px;
+                    margin-left: -22px;
+                }
+                .icon-calendar {
+                    width: 15px;
+                    height: 15px;
+                    fill: #9d9d9d; 
+                    margin-right: 7px;
+                    margin-top: 2px;
+                }
+                .article-date {
+                    font-family: 'OpenSans-Semibold';
+                    font-size: 14px;
+                    color: #9d9d9d;
+                    vertical-align: top;
+                }
+                .article-title {
+                    font-family: 'Montserrat-Bold';
+                    font-size: 26px;
+                }
+                p {
+                    font-family: 'OpenSans';
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

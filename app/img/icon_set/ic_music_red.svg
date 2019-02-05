@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg911"
+   version="1.1"
+   viewBox="0 0 70 90">
+  <metadata
+     id="metadata917">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>All glyphs</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs915" />
+  <title
+     id="title905">All glyphs</title>
+  <g
+     data-name="Layer 2"
+     id="Layer_2">
+    <g
+       data-name="All glyphs"
+       id="All_glyphs">
+      <path
+         style="fill:#e76049;fill-opacity:1"
+         id="path907"
+         d="M60,0H10A10,10,0,0,0,0,10V80A10,10,0,0,0,10,90H60A10,10,0,0,0,70,80V10A10,10,0,0,0,60,0ZM49,47.6c-1.19,1.85-1.82,1.06-1.46,0,.94-2.79.9-11.23-7-12.47V61.2c0,4.85-2.8,7.91-8.75,9.81-5.78,1.86-12.25-.07-13.76-4.22s1.89-9.2,7.59-11.28a12.92,12.92,0,0,1,8.91-.18V18.56h6C40.56,24.88,57.46,34.41,49,47.6Z" />
+    </g>
+  </g>
+</svg>
